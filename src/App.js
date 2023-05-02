@@ -22,7 +22,7 @@ const initialState={
     id: "",
     name: '',
     email:"",
-    entries: 0,
+    entries:0,
    joined:''
   }
 }
@@ -85,7 +85,7 @@ displayFace=(row)=>{
             id:this.state.user.id
           })
         })
-        .then(response=>response.json()).then(re=>console.log(re))
+        .then(response=>response.json())
         .then(count=>{
           this.setState(Object.assign(this.state.user,  { entries:count }))
           })
