@@ -21,7 +21,7 @@ class EditInfo extends Component{
 
       onSubmitUPdate= async (e)=>{
         e.preventDefault()
-        await fetch(`http://localhost:4000/update/${this.userId}`, {
+        await fetch(`https://myapp-back-qhb6.onrender.com/update/${this.userId}`, {
           method:"put",
           headers:{"Content-Type": "application/json"},
           body:JSON.stringify({
