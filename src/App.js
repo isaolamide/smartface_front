@@ -68,7 +68,7 @@ displayFace=(row)=>{
 
   onButtonClick=()=>{
     this.setState({imageUrl: this.state.input})
-    fetch("http://localhost:4000/image",{
+    fetch("https://myapp-back-qhb6.onrender.com/image",{
       method:"post",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify({
@@ -78,7 +78,7 @@ displayFace=(row)=>{
     .then(response=>{
       console.log(response, 'test')
       if (response){
-        fetch("http://localhost:4000/image",{
+        fetch("https://myapp-back-qhb6.onrender.com/image",{
           method:"put",
           headers:{"Content-Type":"application/json"},
           body:JSON.stringify({
