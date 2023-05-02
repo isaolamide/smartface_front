@@ -68,7 +68,7 @@ displayFace=(row)=>{
 
   onButtonClick=()=>{
     this.setState({imageUrl: this.state.input})
-    fetch("https://myapp-back-qhb6.onrender.com/image",{
+    fetch("https://myapp-back-qhb6.onrender.com/imageUrl",{
       method:"post",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify({
