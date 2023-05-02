@@ -20,7 +20,7 @@ class Register extends Component{
     }
     onSubmitSignin=(e)=>{
       e.preventDefault()
-      fetch("http://localhost:4000/register", {
+      fetch("https://myapp-back-qhb6.onrender.com/register", {
         method:"post",
         headers:{"Content-Type": "application/json"},
         body:JSON.stringify({
