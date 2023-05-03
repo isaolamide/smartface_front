@@ -25,7 +25,8 @@ class Register extends Component{
         headers:{"Content-Type": "application/json"},
         body:JSON.stringify({
           name:this.state.name,
-          email: this.state.email
+          email: this.state.email,
+          password:this.state.password
         })
       }).then(responses=> responses.json())
       .then(user=>{
